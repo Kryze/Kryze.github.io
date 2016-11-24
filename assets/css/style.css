@@ -20,6 +20,10 @@ body {
   background-color:#2f3f76;
 }
 
+.no-center{
+	text-align:justify;
+}
+
 .nav a {
     color:#ffffff !important;
 }
