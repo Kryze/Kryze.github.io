@@ -26,7 +26,7 @@ body {
 }
 
 #typischer{
-  background:url('clavier.jpg') no-repeat center center fixed;
+  background:url('clavier.jpg') no-repeat center center;
   background-size:100%;
   width:100%;
 }
@@ -196,6 +196,7 @@ border: 1px solid #e1e1e1;
 }
 
 #studiren{
+	text-align:justify;
 	width:50%;
 	display:inline-block;
 }
