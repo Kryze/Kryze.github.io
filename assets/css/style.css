@@ -14,8 +14,8 @@
 /*=======================================
     GENERAL STYLES
 ==================================================*/
-body {
-          font-family:'Open Sans', sans-serif;
+body {     
+	font-family:'Open Sans', sans-serif;
     font-size:14px;
 }
 
@@ -197,6 +197,6 @@ border: 1px solid #e1e1e1;
 
 #studiren{
 	text-align:justify;
-	width:50%;
+	width:55%;
 	display:inline-block;
 }
