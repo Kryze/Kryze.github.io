@@ -1,280 +1,92 @@
 <!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
 <html lang="en">
-<!--<![endif]-->
+<html>
 <head>
+    <title>Portfolio</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <!--[if IE]>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <![endif]-->
-    <title>MIAGE</title>
-     <!--REQUIRED STYLE SHEETS-->
-    <!-- BOOTSTRAP CORE STYLE CSS -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet" />
-     <!-- FONTAWESOME STYLE CSS -->
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
-       <!-- CUSTOM STYLE CSS -->
-    <link href="assets/css/style.css" rel="stylesheet" />
-     <!-- GOOGLE FONT -->
-     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
-    </head>
-<body>
-   
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/bootstrap.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/style.css') }}">
+	<link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+</head>
 
-    <!--Header section  -->
-    <div class="container" id="home">
-        <div class="row text-center">
-      <div class="col-md-12" >
-          <h1 class="head-main">MIAGE </h1>
-           <h2 class="head-sub-main"> Informatik studieren</h2>
-          
-          
-          </div>
-
-
-            </div>
-      </div>
-    <!--End Header section  -->
-
-     <!-- Navigation -->
-      <nav class="navbar-inverse" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href=""></a>
-            </div>
-            <!-- Collect the nav links for toggling -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="#home"> Startseite</a>
-                    </li>
-                     <li><a href="#about"> Sich Vorstellen</a>
-                    </li>                    
-                    <li><a href="#typischer">Ein typischer Studientag am MIAGE</a>
-                    </li>
-                     <li><a href="#work-sec"> Warum studiere ich am MIAGE</a>
-                        </li>
-                         <li><a href="#contact-sec">Finden Sie uns hier</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav> 
-     <!--End Navigation -->
-
-    <!--About Section-->
-    <section class="color-white " id="about"  >
-   <div class="container" >
-      
-            <div class="row text-center" >
-                <div class="col-md-8 col-md-offset-2 ">
-                    <h2 style="padding-top:50px;">Wir stellen uns vor</h2>
-                    <h5 style=text-align:justify>
-					<p>
-						Wir sind Benjamin und Laurene und sind beide Studenten im dritten Jahr an der MIAGE. Benjamin wohnt in der Nähe von Metz und kommt jede Woche nach Nancy für sein Studium. Nachdem er sein 2-jähriger akademischer Abschluss in Informatik absolviert hatte, hat er sich an der MIAGE beworben um seinem Studium bis zum Masterabschluss weiterzuführen.
-						Laurene hat während den zwei letzten Jahren Mathematik und Physik in Epinal studiert. Sie hat sich dann ebenfalls entschieden an der MIAGE zu Studieren und ist nach Nancy gezogen.
-						Was uns am meisten gefällt? Neben der theoretischer Ausbildung nehmen wir auch an zahlreichen und sehr interessanten Gruppenprojekten teil die uns konkret für das Berufsleben vorbereiten.					</p>
-					<h2 style="padding-top:0px;">Was ist MIAGE? Wie baut sich unser Studium auf?</h2>
-					<p style=text-align:justify>
-						Das MIAGE Studium kann mit dem deutschem Master in Wirtschaftsinformatik verglichen werden und wird von französischen Universitäten angeboten. 
-						Das Ziel der Lehre ist eine professionalisierende Ausbildung, die eine doppelte Kompetenz in der Informatik und in der Geschäftsführung bringt, und mit der wir aktuelle und zukünftige Probleme identifizieren, komplexe Fragestellungen bearbeiten und mit Hilfe wissenschaftlicher Methoden und der Informatik nachhaltige Lösungen entwickeln. 
-						Der Studiengang beinhaltet zwei Praktika in Unternehmen, die der Höhepunkt der Ausbildung sind. Das Studium ist so gebaut, dass die Studenten über eine hochqualifizierte Ausbildung in der Informationsverarbeitung, dem Management, der Organisation, der Konzeption und Einführung von Auskunftssystemen im Unternehmen verfügen.
-						Zu unserem Kursus gehören folgende Fächer: Mathematik, Datenbankstrukturen, Web und objektorientierte Programmierung, Skriptsprachen, Auskunfts- und Betriebssysteme, Finanzwirtschaft, kommerzielles Management und Fremdsprachen.
-					</p>
-                    </h5>
-                </div>
-                
-            </div>
-        
-        
-      </div>
-</section>
-
-       <section class=" color-light" id="typischer"  >
-   <div class="container" >
-      <div class="row text-center" id="vide" >
-		<p></p>
-        </div>
-         
-        <div class="row text-center" id="studiren" >
-                <div class="col-md-16">
-                    <h2> Ein typischer Studientag am MIAGE</h2>
-                    <p>  
-					Jeden Tag kommen wir zu Fuß, mit der Bahn, dem Auto oder dem Bus zum Universitätsgelände, das sich “Pôle Lorrain de Gestion” nennt. Unser Tag besteht aus Vorlesungen und Seminaren, die von ein bis zwei Stunden dauern. 
-					Normalerweise haben wir eine kleine Pause um halb elf, wo wir uns meistens gemeinsam um einen Kaffee treffen und unterhalten. Während der Mittagspause essen manche zu Hause, andere in der Mensa, und andere bleiben auf dem Universitätsgelände um an ihren Gruppenprojekten weiter zu arbeiten. 
-					Die Vorlesungen finden für die gesamte Klasse (35 Studenten) statt, und in den Seminaren sind wir in zwei Gruppen aufgeteilt um die praktischen Übungen durchzuführen. Wir arbeiten oft am Computer, entweder zu programmieren oder ganz einfach um Notizen zu machen.
-                    </p>
-                </div>
-                
-            </div>
-      </div>
-</section>
-    <!--End About Section-->
-
-
-       
-   <!-- WORK Flow Section -->  
-     <section class="color-white " id="work-sec"  >
-   <div class="container" >
-      
-            <div class="row text-center" >
-                <div class="col-md-8 col-md-offset-2 ">
-                    <h2>Warum studiere ich am MIAGE</h2>
-                    <h4>
-
-                    </h4>
-                </div>
-                
-            </div>
-        
-        <div class="row text-center g-pad-bottom" >
-                
-                      <div class="col-md-6">
-                                
-              <div class="work-div">   									 
-                                 
-                  <i class="fa fa-male fa-5x"></i>                   
-              
-                                 
-                  <p class="no-center">Bei meiner Wahl der Studiumsverfolgung habe ich mich sofort für die Ausbildung MIAGE interessiert. 
-				  Diese Bildung ermöglicht, Kenntnisse in der Informatik und in der Geschäftsführung zu erhalten, die stark die Unternehmen interessieren. Die erworbenen Sprachkenntnisse ermöglichen, zahlreiche Opportunitäten im Ausland zu erhalten. 
-				  Ich denke, dass diese Ausbildung für alle, die ein hochwertiges Studium und Diplom im Bereich Informatik und Wirtschaft wünschen interessant ist.
-</p>                   
-                                 
-                                   
-              </div>	
-             					
-            </div>								
-               				
-
-            <div class="col-md-6">
-                                
-              <div class="work-div">   									 
-                                 
-                  <i class="fa fa-female fa-5x"></i>                   
-              
-                                 
-                  <p class="no-center">Ich wünschte mir einen Studiengang, der sowohl eine Praktische sowie eine ausgezeichnete theoretische Ausbildung anbietet. 
-				  Aus diesem Grund habe ich mich für MIAGE entschieden. Die Gruppenprojekte machen großen Spaß und jeden Tag lerne ich etwas neues. 
-				  Ich freue mich schon auf das zukünftige Praktikum, das mir einen guten Einblick in das Berufsleben geben wird.
-				  </p>                   
-                               
-                                   
-              </div>	
-             					
-            </div>			
-                        				
-               
-                
-            </div>
-      </div>
-</section>
-    <!--End WORK Flow  Section -->  
-    <!-- Contact Section -->  
-     <section class="color-light " id="contact-sec"  >
-   <div class="container" >      
-            <div class="row text-center" >
-                <div class="col-md-8 col-md-offset-2 ">
-                    <h2>Finden Sie uns hier</h2>
-                    <h4>
-
-                    </h4>
-                </div>
-                
-            </div>
-        
-        <div class="row" >
-            <div class="col-md-5 contact-cls" >
-                <h3>UFR Mathématiques & Informatique</h3>
-					<div >
-						<span><i class="fa fa-home"> </i> 13 Rue Michel Ney, 54000 Nancy </span>
-                        <br />
-						<span><i class="fa fa-phone"> </i> 03 83 32 45 85</span>
-                       
-						
-					</div>
-					
-					
-            </div>
-                <div class="col-md-7">
-                  
-                        <form>
-                            <div class="row">
-                                <div class="col-md-6 col-sm-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" required="required" placeholder="Name">
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-sm-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" required="required" placeholder="Email">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12 col-sm-12">
-                                    <div class="form-group">
-                                        <textarea name="message" id="message" required="required" class="form-control" rows="3"  placeholder="Nachricht"></textarea>
-                                    </div>
-                                    <div class="form-group">
-                                        <button type="submit" class="btn btn-default">Submit Request</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    <br />
-                    <div id="social-icon">
-						<a href="https://www.facebook.com/Miage-Universit%C3%A9-de-Lorraine-162595877161681/?fref=ts"><i class="fa fa-facebook fa-2x"></i></a>
-						<a href="https://twitter.com/miagenancy"><i class="fa fa-twitter fa-2x"></i></a>
-						<a href="https://www.linkedin.com/grps/MIAGE-Nancy-3698646"><i class="fa fa-linkedin fa-2x"></i></a>				
-					</div>
-                </div>
-                
-            </div>
-      </div>
-</section>
-<!--End Contact Section -->
-
-    <!--Map Section -->
-       <section class="color-light " id="map-sec"  >
-            <iframe class="cnt"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2633.4671155948527!2d6.171684615668671!3d48.69655212927198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x64951c949703423!2sUniversit%C3%A9+Nancy+2+P%C3%B4le+Lorrain+de+Gestion!5e0!3m2!1sfr!2sfr!4v1479975152500" width="600"></iframe>
-                    
-   
-           </section>
-    <!--End Map Section -->
-    <!--footer Section -->
-     <div  class="for-full-back "  id="footer" >
-               
-          
-         2016 | CLADT Laurene & RATH Benjamin
-         
-            </div>
-    <!--End footer Section -->
-     <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
-     <!-- CORE JQUERY  -->
-    <script src="assets/plugins/jquery-1.10.2.js"></script>
-     <!-- BOOTSTRAP CORE SCRIPT   -->
-    <script src="assets/plugins/bootstrap.js"></script>
-     <!-- CUSTOM SCRIPTS -->
-    <script src="assets/js/custom.js"></script>
-     
+<body id="image_Ecran">
+    <div id="app">
+		<div id="particles-js"></div>
+		<div><p id="prenom"><img src="{{ URL::asset('img/deer2.png') }}" width="50" height="50">Benjamin Rath</p></div>
+    </div>
+	<div id="deuxieme">
+	<p id="presentation">Je suis actuellement en Licence MIAGE à Nancy</p>
+	<p id="presentationdroite">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer felis felis, cursus malesuada nisl id, mattis tristique lacus. 
+						Duis consectetur vulputate diam sit amet congue. Nam lacus lorem, semper commodo tincidunt ut, fringilla vitae lorem. 
+						Ut pulvinar, lorem quis tristique viverra, massa tellus facilisis enim, sit amet eleifend sapien arcu sed risus. 
+						Nullam libero massa, rutrum non pharetra quis, varius quis velit. 
+						Quisque in mauris ut turpis bibendum finibus. Donec semper id ipsum sit amet iaculis. </p>
+	</div>
+	<div id="troisieme">
+	<p id="presentationwhite">Quelques Projets</p>
+	<div id="images">
+	<p><a class="titreprojet" href="https://github.com/Kryze/Series_PHP_L3">Showtracker </a></p>
+	<p class="soustitreprojet"> Projet L3 MIAGE - 2016 </p>
+	<img class="imgcenterspecial" src="{{ URL::asset('img/series.png') }}">
+	<p><a class="titreprojet" href="https://github.com/vincent59u/ProjetBash">ProjetBash </a></p>
+	<p class="soustitreprojet"> Projet L3 MIAGE - 2016 </p>
+	<img class="imgcenterspecial" src="{{ URL::asset('img/projetbash.png') }}">
+	</div>
+	</div>
+	<div id="quatrieme">
+	<p class="reseaux">Une photo de chat aleatoire pour egayer ta journee !</p>
+	<div id="images">
+	<?php chatons() ?>
+	</div>
+	</div>
+	<div id="contact">
+	<p class="reseauxwhite">Vous souhaitez me contacter ?</p>
+	<div id="formulaire">
+	<form id="form" class="topBefore" method="POST">
+		  <input type="hidden" name="_token" value="{{ csrf_token() }}">
+		  <input id="name" name="name" type="text" placeholder="NOM">
+		  <input id="email" name="email" type="text" placeholder="E-MAIL">
+		  <input id="subject" name="subject" type="text" placeholder="SUJET">
+		  <textarea id="message" name ="message" type="text" placeholder="MESSAGE"></textarea>
+	<input id="submit" name="submit" type="submit" value="ENVOYER">
+	</form>
+	</div>
+	</div>
+	<div id="dernier">
+	<div id="images">
+	<a href="https://github.com/Kryze"><img class="imgcenter" src="{{ URL::asset('img/github-logo.png') }}"></a>
+	<a href="https://www.linkedin.com/in/benjamin-rath-a02556134/"><img class="imgcenter" id="imglinkedin" src="{{ URL::asset('img/linkedin.png') }}"></a>
+	<a href="https://twitter.com/benjamiin_r"><img class="imgcenter" src="{{ URL::asset('img/twitter.png') }}"></a>
+	</div>
+	</div>
+    <!-- Scripts -->
+    <footer class="footer">
+        @section('footer')
+			<script type="text/javascript" src="{{ URL::asset('js/particles.js') }}"></script>
+            <script type="text/javascript" src="{{ URL::asset('js/app.js') }}"></script>
+            <script type="text/javascript" src="{{ URL::asset('js/jquery-3.1.1.js') }}"></script>
+            <script type="text/javascript" src="{{ URL::asset('js/boostrap.js') }}"></script>
+    </footer>
 </body>
 </html>
+
+<?php
+
+function chatons(){
+	$val = rand(200,600);
+	$val2 = $val+50;
+	echo "<img class=\"imgchat\" src=\"https://placekitten.com/g/$val/$val2\" alt=\"Hmm.. mais ou est passez ce chat ?\">";
+}
+
+function email(){
+if(isset($_POST["name"]) && isset($_POST["email"]) && isset($_POST["subject"]) && isset($_POST["message"])){
+	$to      = "benjamin.rath@cegetel.net";
+	$subject = $_POST["subject"];
+	$message = "Vous avez reçu un email de ".$_POST["name"]."\r\n".$_POST["message"];
+	$headers = 'From: '.$_POST["email"]. "\r\n" .
+		'Reply-To:'.$_POST["email"]. "\r\n" .
+		'X-Mailer: PHP/' . phpversion();
+	mail($to, $subject, $message, $headers);
+}
+}
