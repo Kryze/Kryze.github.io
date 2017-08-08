@@ -3,10 +3,13 @@
   src: url("../fonts/Futura.otf");
 }
 
+body{
+  font-family:"Futura";
+}
+
 
 nav{
-  font-family:"Futura";
-  margin-top:10px;
+  margin-top:50px;
 }
 
 ul{
@@ -14,8 +17,8 @@ ul{
 }
 
 li{
-  float:left;
-  margin:2%;
+  display: inline;
+  margin-left:2%;
   font-size:18px;
 }
 
@@ -28,9 +31,23 @@ li a:hover{
   color:rgb(32, 208, 166);
 }
 
+
+hr{
+  width:100%;
+  border:1px dashed black;
+}
+
+footer{
+  width:100%;
+  height:100px;
+  position:absolute;
+  z-index:4;
+  background-color:rgb(32, 208, 166);
+  top:550px;
+}
+
 .resume{
-  font-family:"Futura";
-  float:right;
+  height:550px;
   margin-left:40%;
   margin-right: 9%;
   font-size:35px;
@@ -44,4 +61,38 @@ li a:hover{
 
 .specialspan{
   color:black;
+}
+
+.arrow{
+  background-color:red;
+}
+
+.links{
+  margin-top:20px;
+  text-align:center;
+}
+
+.link{
+  margin-left:40px;
+}
+
+
+.fp-controlArrow {
+    position: absolute;
+    /*width: 128px; /* This can be added here so you don't have to set a width and height 2 times for each arrow, this will create one width for both arrows */
+    /*height: 128px; /* This does the same as above */
+    margin-top:-64px; /* This value must always be half of the height - This does the same as above */
+    z-index: 4;
+    top: 50%;
+}
+
+.fp-controlArrow.fp-prev {
+    left:10px;
+    top:420px;
+    border-color: transparent rgb(32, 208, 166) transparent transparent;
+}
+.fp-controlArrow.fp-next {
+    left:1300px;
+    top:420px;
+    border-color: transparent transparent transparent rgb(32, 208, 166);
 }
