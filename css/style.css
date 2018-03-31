@@ -1,14 +1,12 @@
-body{
-  background-color:rgb(8, 3, 62);
-  margin:0;
-  min-width:450px;
-}
-
 .maininfo{
   color:white;
+  font-weight: 300;
   margin-left:-2px;
-  font-family: 'Dosis', sans-serif;
   font-size:56px;
+}
+
+.tabs{
+  margin-left:-22px;
 }
 
 .submaininfo{
@@ -21,7 +19,7 @@ body{
   color:gray;
   font-family: 'Dosis', sans-serif;
   font-size:18px;
-  width:200px;
+  width:500px;
 }
 
 .info{
@@ -42,9 +40,7 @@ body{
   font-size:38px;
 }
 
-a{
-  color:white;
-}
+
 
 hr{
   margin-right:100%;
