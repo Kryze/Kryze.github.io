@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,400,900');
+
+// Set your brand colors
+
+$gunmetaldark : #2b2d42;
+$grayblue : #8d99ae;
+$antiflashwhite : #edf2f4;
+$redlight: #ef233c;
+$reddark: #d90429;
+
+$purple: #8A4D76;
+$pink: #FA7C91;
+$brown: #757763;
+$beige-light: #a5668b;
+$beige-lighter: #d3bcc0;
+
+// Update Bulma's global variables
+$family-sans-serif: "Merriweather", sans-serif;
+$grey-dark: $gunmetaldark;
+$grey-light: $grayblue;
+$primary: $reddark;
+$info:$gunmetaldark;
+$success:$purple;
+$link: $redlight;
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+
+// Update some of Bulma's component variables
+$body-background-color: $antiflashwhite;
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+
+// Import only what you need from Bulma
+@import "../bulma-0.7.4/bulma.sass";
