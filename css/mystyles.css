@@ -17,6 +17,8 @@
   -ms-user-select: none;
   user-select: none; }
 
+
+
 .cardcustom{
   margin-top:20px;
   margin-bottom:20px;
@@ -1783,16 +1785,16 @@ a.box:active {
   width: 100%; }
   .input::-moz-placeholder,
   .textarea::-moz-placeholder {
-    color: rgba(54, 54, 54, 0.3); }
+    color: rgba(22, 17, 17, 0.5); }
   .input::-webkit-input-placeholder,
   .textarea::-webkit-input-placeholder {
-    color: rgba(54, 54, 54, 0.3); }
+    color: rgba(22, 17, 17, 0.5); }
   .input:-moz-placeholder,
   .textarea:-moz-placeholder {
-    color: rgba(54, 54, 54, 0.3); }
+    color: rgba(22, 17, 17, 0.5); }
   .input:-ms-input-placeholder,
   .textarea:-ms-input-placeholder {
-    color: rgba(54, 54, 54, 0.3); }
+    color: rgba(22, 17, 17, 0.5); }
   .input:hover, .input.is-hovered,
   .textarea:hover,
   .textarea.is-hovered {
@@ -1802,7 +1804,7 @@ a.box:active {
   .textarea.is-focused,
   .textarea:active,
   .textarea.is-active {
-    border-color: #ef233c;
+    border-color: #239def;
     box-shadow: 0 0 0 0.125em rgba(239, 35, 60, 0.25); }
   .input[disabled], fieldset[disabled] .input,
   .textarea[disabled],
