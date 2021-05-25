@@ -1,7 +1,42 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
-@import url("https://fonts.googleapis.com/css?family=Merriweather:300,400,900");
-@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+@font-face {
+  font-family: Assistant-Bold;
+  src: url(../fonts/Assistant-Bold.ttf);
+}
+
+@font-face {
+  font-family: Assistant-ExtraBold;
+  src: url(../fonts/Assistant-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: Assistant-ExtraLight;
+  src: url(../fonts/Assistant-ExtraLight.ttf);
+}
+
+@font-face {
+  font-family: Assistant-Light;
+  src: url(../fonts/Assistant-Light.ttf);
+}
+
+@font-face {
+  font-family: Assistant-Medium;
+  src: url(../fonts/Assistant-Medium.ttf);
+}
+
+@font-face {
+  font-family: Assistant-Regular;
+  src: url(../fonts/Assistant-Regular.ttf);
+}
+
+@font-face {
+  font-family: Assistant-SemiBold;
+  src: url(../fonts/Assistant-SemiBold.ttf);
+}
+
+
+
 /*! bulma.io v0.7.4 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {
   from {
@@ -6221,3 +6256,49 @@ label.panel-block {
 .footer {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem; }
+
+.titleprojects{
+  font-size:24px;
+  font-family: Assistant-Bold;
+  margin: 10px 10px 10px 0px;
+}
+
+.underlined{
+  text-decoration: underline;
+  text-decoration-style: double;
+  text-underline-offset: 8px;
+  text-decoration-color: rgb(235, 86, 86);
+}
+
+.underlined2{
+  text-decoration: underline;
+  text-decoration-style: double;
+  text-underline-offset: 1px;
+  text-decoration-color: rgb(235, 86, 86);
+}
+
+.subtitleprojects{
+  font-size:18px;
+  font-family: Assistant-Light;
+  margin: 10px 10px 10px 0px;
+}
+
+.heromargin{
+  margin-top:50px;
+  margin-bottom:50px;
+}
+
+.zoom{
+  transition: transform 1s;
+}
+
+.zoom:hover{
+  transform: scale(0.95);
+}
+
+.zoom:hover .titleprojects{
+  text-decoration: underline;
+  text-decoration-style: double;
+  text-underline-offset: 1px;
+  text-decoration-color: rgb(235, 86, 86);
+}
