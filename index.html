@@ -169,7 +169,7 @@
       $('.visibleproject').css("visibility", "hidden");
 
       if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-
+		$('.visibleproject').css("visibility", "visible");
       }else{
       $(window).on('scroll', function(){
         if ($('.visibleproject').isInViewport()) {
