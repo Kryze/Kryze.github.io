@@ -35,6 +35,8 @@
   src: url(../fonts/Assistant-SemiBold.ttf);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;700&display=swap');
+
 
 
 /*! bulma.io v0.7.4 | MIT License | github.com/jgthms/bulma */
@@ -67,6 +69,8 @@
     bottom: -250px;
   }
 }
+
+
   
 
 .cardcustom{
@@ -6288,6 +6292,15 @@ label.panel-block {
   margin-bottom:50px;
 }
 
+.list-span{
+  top:-3px; 
+  position:relative;
+}
+
+ul{
+  list-style: georgian inside url('../img/star.png');
+}
+
 .zoom{
   transition: transform 1s;
 }
@@ -6302,3 +6315,123 @@ label.panel-block {
   text-underline-offset: 1px;
   text-decoration-color: rgb(235, 86, 86);
 }
+
+h1{
+  font-family: 'Nunito Sans', sans-serif !important;
+  font-size:calc(100% + 1.5vw);
+  font-weight:700;
+}
+
+
+h2{
+  font-family: 'Nunito Sans', sans-serif !important;
+  font-size:calc(100% + 1vw);
+  font-weight:600;
+}
+
+.p-description{
+  font-family: 'Nunito Sans', sans-serif;
+  font-size:calc(100% + 0.15vw);
+  font-weight:600;
+}
+
+.small-title{
+  font-family: 'Nunito Sans', serif;
+  font-size:calc(100% + 0.75vw);
+  font-weight:300;
+  margin-bottom: 25px;
+}
+
+
+
+
+
+[datainviewport="fadeInCard"].is-inViewport { 
+    animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+[datainviewport="slideInLeft"].is-inViewport { 
+    animation: slideInLeft; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+[datainviewport="highlightTextSecondary"].is-inViewport {
+    background-size: 200% auto; 
+    background-image: linear-gradient(to right,hsla(0, 0%, 0%,0%) 50%,#dfb776 50%);
+    background-position: 0% 0; 
+    animation-name: highlight;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+[datainviewport="highlightTextPrimary"].is-inViewport {
+    background-size: 200% auto; 
+    color:#000000;
+    background-image: linear-gradient(to right,hsla(0, 0%, 0%,0%) 50%,#f2f2f2 50%);
+    background-position: 0% 0; 
+    animation-name: highlight;
+    animation-duration: 1.2s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes highlight {
+    from {background-position: 0% 0;}
+    to {background-position: -100% 0;}
+}
+
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+[datainviewport="trackingInExpand"].is-inViewport { 
+  -webkit-animation: tracking-in-expand 1.2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	animation: tracking-in-expand 1.2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+[datainviewport="slideInRight"].is-inViewport { 
+    animation: slideInRight; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+[datainviewport="fadeIn"].is-inViewport { 
+    animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+    animation-fill-mode: forwards;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    opacity:0;
+}
+
+[datainviewport="flipInX"].is-inViewport { 
+    animation: flipInX; /* referring directly to the animation's @keyframe declaration */
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
