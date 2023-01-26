@@ -55,12 +55,17 @@ html{
   background: #E7B150;
 }
 
+.is-black-button{
+  background:#181D31 !important;
+  border: solid 1px #181D31 !important;
+}
+
 .is-background-color-purple{
-  background: #7c55e7;
+  background: #181D31;
 }
 
 .has-text-color{
-  color: #7c55e7 !important;
+  color: #181D31 !important;
   text-shadow: 1px 1px 2px white;
 }
 
@@ -6307,7 +6312,7 @@ label.panel-block {
   text-decoration: underline;
   text-decoration-style: double;
   text-underline-offset: 12px;
-  text-decoration-color: #573ba2;
+  text-decoration-color: #434242;
 }
 
 .underlined2{
@@ -6337,7 +6342,7 @@ label.panel-block {
 
 ul li::before {
   content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  color:#7c55e7; /* Change the color */
+  color:#181D31; /* Change the color */
   font-weight: bold; /* If you want it to be bold */
   display: inline-block; /* Needed to add space between the bullet and the text */
   width: 1em; /* Also needed for space (tweak if needed) */
@@ -6420,7 +6425,7 @@ h2{
 [datainviewport="highlightTextPrimary"].is-inViewport {
     background-size: 200% auto; 
     color:#ffffff;
-    background-image: linear-gradient(to right,hsla(0, 0%, 0%,0%) 50%,#7c55e7 50%);
+    background-image: linear-gradient(to right,hsla(0, 0%, 0%,0%) 50%,#181D31 50%);
     background-position: 0% 0; 
     animation-name: highlight;
     animation-duration: 1.2s;
