@@ -725,7 +725,8 @@
 	<section class="hero is-small is-background-color-purple">
 		<div class="hero-body has-text-centered">
 			<small class="has-text-white">© 2023 • <a target="_blank" rel="noopener noreferrer" href="https://www.kryze.fr"
-					class="footerlink has-text-color-secondary">Benjamin Rath</a></small>
+					class="footerlink has-text-color-secondary">Benjamin Rath</a> • <a target="_blank" rel="noopener noreferrer" href="https://www.kryze.fr/mentions-legales"
+					class="footerlink has-text-color-secondary">Mentions Légales</a></small>
 		</div>
 	</section>
 </body>
@@ -789,6 +790,80 @@
 	ELs_inViewport.forEach(EL => {
 		Obs.observe(EL, options);
 	});
+</script>
+
+<!-- Import Web Component -->
+<script
+  type="module"
+  src="https://unpkg.com/@porscheofficial/cookie-consent-banner@3.0.0/dist/cookie-consent-banner/cookie-consent-banner.esm.js"
+></script>
+<!-- Update Styles-->
+<style>
+  :root {
+    --cookie-consent-banner-z-index-container: 101;
+    --cookie-consent-banner-colors-primary: #eecc5e;
+    --cookie-consent-banner-colors-primary-border: var(
+      --cookie-consent-banner-colors-primary
+    );
+    --cookie-consent-banner-colors-primary-content: #000;
+
+    --cookie-consent-banner-border-radius-buttons: 100px;
+    --cookie-consent-banner-border-radius-body: 0;
+
+    --cookie-consent-banner-spacings-container-padding-top: 0;
+    --cookie-consent-banner-spacings-container-padding-left: 0;
+    --cookie-consent-banner-spacings-container-padding-bottom: 0;
+    --cookie-consent-banner-spacings-container-padding-right: 0;
+    }
+
+    .cc_buttons button{
+        cursor:pointer !important;
+        color:red !important;
+    }
+</style>
+
+<!-- Init Web Component -->
+<cookie-consent-banner
+  btn-label-accept-and-continue="Accepter & Continuer"
+  btn-label-persist-selection-and-continue="Sauvegarder la selection et continuer"
+  btn-label-select-all-and-continue="Tous sélectionner et continuer"
+  content-settings-description="Ci-dessous, vous pouvez choisir les cookies que vous souhaitez accepter. (Les cookies techniques sont nécessaire au bon fonctionnement du site)"
+>
+  Ce site n'utilise que des cookies techniques visant au bon fonctionnement du site. Aucune donnée n'est utilisée ici à des fins d'analyses ou transmise à des partenaires commerciales. 
+  En cliquant sur "Accepter & Continuer", vous acceptez ainsi les cookies techniques.
+  Vous pouvez également lire toutes nos informations légales en cliquant sur le bouton tout en bas du site.
+</cookie-consent-banner>
+
+<!-- Open Banner again -->
+
+<!-- Scripts -->
+<script>
+  /* Update available Cookie Categories */
+  const cookieConsentBannerElement = document.querySelector(
+    "cookie-consent-banner"
+  );
+  cookieConsentBannerElement.availableCategories = [
+    {
+      description:
+        "Permet le bon fonctionnement du site.",
+      key: "technically_required",
+      label: "Cookies techniques (obligatoires)",
+      isMandatory: true,
+    },
+  ];
+
+  /* Init Tag Manager */
+
+ function loadScripts(event) {
+    const acceptedCategories = event?.detail?.acceptedCategories;
+
+    if (acceptedCategories.includes("technically_required")) {
+      cookieConsentBannerElement.display = none;
+    }
+  }
+
+  window.addEventListener("cookie_consent_preferences_restored", loadScripts);
+  window.addEventListener("cookie_consent_preferences_updated", loadScripts);
 </script>
 
 </html>
